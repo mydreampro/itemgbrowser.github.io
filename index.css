@@ -1,0 +1,172 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #2a3e48;
+}
+.container {
+    text-align: center;
+    max-width: 600px;
+}
+.search-container {
+    display: flex;
+    align-items: center;
+}
+input[type="text"] {
+    width: 90%;
+    padding: 15px;
+    border: 2.5px solid #248c02;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+input[type="submit"] {
+    padding: 16px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#setting-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 35px;
+    height: 35px;
+    transition: width 0.6s, height 0.6s;
+}
+
+#setting-icon:hover {
+    width: 48px;
+    height: 48px;
+    animation: pulse 0.5s infinite alternate;
+}
+
+#login-btn{
+    position: absolute;
+    top: 10px;
+    right: 60px;
+    width: 100px;
+    height: 38px;
+    border-radius: 6px;
+    border: 2px solid #038C65;
+    font-size: 1.1em;
+    font-weight: 500;
+    transition: .5s;
+    color: white;
+    background: transparent;
+}
+
+#login-btn:hover{
+    background: #04BF8A;
+    color: #162938;
+}
+
+#country{
+    position: fixed;
+    color: white;
+    font-size: 1em;
+    right: 370px;
+    top: 320px;
+}
+
+#tempreture{
+    position: absolute;
+    color: white;
+    font-size: 1em;
+    right: 1025px;
+    top: 320px;
+}
+
+/*--------------------------------------------------------------------------*/
+
+.shortcutss {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    gap: 40px; 
+}
+
+
+.shortcuts {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+}
+
+.shortcut {
+    position: relative; /* Required for absolute positioning */
+    width: 50px; /* Adjusted width for the white box */
+    height: 50px; /* Adjusted height for the white box */
+    background-color: #2a3e48;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: background-color 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; /* Adjusted padding */
+    flex-direction: column; /* Place items in a column layout */
+    margin-bottom: 20px; /* Added margin bottom */
+}
+
+.shortcut:hover {
+    background-color: white;
+    width: 65px; /* Maintaining the same size on hover */
+    height: 65px; /* Maintaining the same size on hover */
+}
+
+.shortcut-img {
+    width: 50px; /* Adjusted width for the image */
+    height: 50px; /* Adjusted height for the image */
+    object-fit: contain;
+}
+
+.item-label {
+    font-size: 18px;
+    color: #2a3e48; /* Change color to blue */
+    position: absolute;
+    bottom: -20px; /* Adjust as necessary */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease-in-out;
+}
+
+.shortcut:hover .item-label {
+    opacity: 1; /* Show label on hover */
+}
+
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
